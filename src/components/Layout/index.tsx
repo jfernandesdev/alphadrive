@@ -7,13 +7,13 @@ import SideRight from '../SideRight';
 import { Grid } from './styles';
 
 
-const Layout: React.FC = () => {
+const Layout: React.FC = (props) => {
   const [isCollapsed, setIsCollapsed] = useState(false);
 
   return (
     <Grid className={isCollapsed ? 'menuIsCollapsed' : ''}>
       <SideBar isCollapsed={isCollapsed} setIsCollapsed={setIsCollapsed} />
-      <Content />
+      <Content {...props} />
       <SideRight />
     </Grid>
   );

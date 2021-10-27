@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Flex, Image,  Text } from '@chakra-ui/react';
 import { Wrapper, Logo, MenuList, MenuItem } from './styles';
 
@@ -12,32 +12,35 @@ const menuItensList = [
   {
     title: 'Dashboard',
     icon: <HiOutlineViewGrid />,
-    url: 'dashboard'
+    url: '/dashboard'
   },
   {
     title: 'Shared',
     icon: <HiOutlineShare />,
-    url: 'shared'
+    url: '/shared'
   },
   {
     title: 'Starred',
     icon: <HiOutlineStar />,
-    url: 'starred'
+    url: '/starred'
   },
   {
     title: 'Deleted',
     icon: <HiOutlineTrash />,
-    url: 'deleted'
+    url: '/deleted'
   }
 ];
 
 interface SideBarPros {
-  isCollapsed: boolean;
+  isCollapsed?: boolean;
   setIsCollapsed: (isCollapsed: boolean) => void; 
 }
 
 
 const SideBar: React.FC<SideBarPros> = ({isCollapsed, setIsCollapsed}) => { 
+
+  const location = useLocation();
+
   return ( 
     <Wrapper className="sidebar">
       <Flex direction="column" justifyContent="space-between">
@@ -48,14 +51,12 @@ const SideBar: React.FC<SideBarPros> = ({isCollapsed, setIsCollapsed}) => {
 
         <MenuList>
           {menuItensList.map((item, index) => (
-            <BrowserRouter key={index}>
-              <Link to={item.url} >
-                <MenuItem className={index === 0 ? "isActive" : ''}>
-                  {item.icon}
-                  <span>{item.title}</span>
-                </MenuItem>
-              </Link>
-            </BrowserRouter>
+            <Link to={item.url} key={index}>          
+              <MenuItem className={location.pathname === item.url ? "isActive" : ''}>
+                {item.icon}
+                <span>{item.title}</span>
+              </MenuItem>
+            </Link>
           ))}
         </MenuList>
       
