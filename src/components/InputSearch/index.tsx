@@ -11,8 +11,9 @@ import {
 import { BsSearch } from 'react-icons/bs';
 import { HiAdjustments } from 'react-icons/hi';
 
-const Content: React.FC = (props) => {
+const InputSearch: React.FC = () => {
   return (
+    <>
     <Box padding="30px">
       
     <InputGroup>
@@ -34,11 +35,10 @@ const Content: React.FC = (props) => {
         icon={<HiAdjustments />}
       />
     </InputGroup>
-
-    <Box padding="30px">
-      {props.children}
     </Box>
-  </Box>
+
+  
+  </>
 )}
 
-export default Content;
+export default InputSearch;

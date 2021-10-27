@@ -14,12 +14,16 @@ import {
   Center
  } from '@chakra-ui/react';
 
+import { BoxProfile } from './styles';
 import { FiChevronDown } from 'react-icons/fi';
 
+import { useLayout  } from '../../contexts/LayoutContext';
+
 const SideRight: React.FC = () => {
+  const {user} = useLayout();
   return (
     <Box padding="30px" style={{background: '#f9f9f9'}}>
-      
+      <BoxProfile>
     <Menu>
       <MenuButton
         py={1}
@@ -36,19 +40,17 @@ const SideRight: React.FC = () => {
       <Flex justifyContent="space-between" alignItems="center">
         <Center>
           <Avatar 
-            name="Fulano de Tal" 
+            name={user.name}
             bg="line_dark"
-            mr={3}
-            src="https://randomuser.me/api/portraits/men/32.jpg"
+            src={user.avatar}
           />
           <Flex direction="column">
-            <Heading as="h6" size="xs" color="black_accent">Fulano de Tal</Heading >
-            <Text fontSize="xs" color="gray">fulano@email.com</Text>
+            <Heading as="h6" size="xs" color="black_accent">{user.name}</Heading >
+            <Text fontSize="xs" color="gray">{user.email}</Text>
           </Flex>
+           <FiChevronDown />
         </Center>
-
-        <FiChevronDown />
-        
+       
       </Flex>
     </MenuButton>
     
@@ -59,6 +61,9 @@ const SideRight: React.FC = () => {
       <MenuItem>Logout</MenuItem>
     </MenuList>
     </Menu>
+
+  </BoxProfile>
+ tstwwewrrr
   </Box>
   );
 }

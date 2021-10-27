@@ -3,6 +3,8 @@ import { Link, useLocation } from 'react-router-dom';
 import { Flex, Image,  Text } from '@chakra-ui/react';
 import { Wrapper, Logo, MenuList, MenuItem } from './styles';
 
+import { useLayout } from '../../contexts/LayoutContext';
+
 import { HiOutlineViewGrid, HiOutlineShare, HiOutlineStar, HiOutlineTrash } from 'react-icons/hi';
 import { BsArrowBarLeft } from 'react-icons/bs';
 
@@ -31,14 +33,15 @@ const menuItensList = [
   }
 ];
 
-interface SideBarPros {
-  isCollapsed?: boolean;
-  setIsCollapsed: (isCollapsed: boolean) => void; 
-}
+// interface SideBarPros {
+//   isCollapsed?: boolean;
+//   setIsCollapsed: (isCollapsed: boolean) => void; 
+// }
 
 
-const SideBar: React.FC<SideBarPros> = ({isCollapsed, setIsCollapsed}) => { 
+const SideBar: React.FC = () => { 
 
+  const { isCollapsed, setIsCollapsed } = useLayout();
   const location = useLocation();
 
   return ( 
