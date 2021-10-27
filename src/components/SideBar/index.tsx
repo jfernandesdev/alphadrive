@@ -1,0 +1,71 @@
+import React from 'react';
+import { BrowserRouter, Link } from 'react-router-dom';
+import { Flex, Image,  Text } from '@chakra-ui/react';
+import { Wrapper, Logo, MenuList, MenuItem } from './styles';
+
+import { HiOutlineViewGrid, HiOutlineShare, HiOutlineStar, HiOutlineTrash } from 'react-icons/hi';
+import { BsArrowBarLeft } from 'react-icons/bs';
+
+import LogoImg from '../../assets/logo.svg';
+
+const menuItensList = [
+  {
+    title: 'Dashboard',
+    icon: <HiOutlineViewGrid />,
+    url: 'dashboard'
+  },
+  {
+    title: 'Shared',
+    icon: <HiOutlineShare />,
+    url: 'shared'
+  },
+  {
+    title: 'Starred',
+    icon: <HiOutlineStar />,
+    url: 'starred'
+  },
+  {
+    title: 'Deleted',
+    icon: <HiOutlineTrash />,
+    url: 'deleted'
+  }
+];
+
+interface SideBarPros {
+  isCollapsed: boolean;
+  setIsCollapsed: (isCollapsed: boolean) => void; 
+}
+
+
+const SideBar: React.FC<SideBarPros> = ({isCollapsed, setIsCollapsed}) => { 
+  return ( 
+    <Wrapper className="sidebar">
+      <Flex direction="column" justifyContent="space-between">
+        <Logo>
+          <Image src={LogoImg} alt="Alpha Drive" boxSize="50px" />
+          <Text>Alpha Drive</Text>
+        </Logo>
+
+        <MenuList>
+          {menuItensList.map((item, index) => (
+            <BrowserRouter key={index}>
+              <Link to={item.url} >
+                <MenuItem className={index === 0 ? "isActive" : ''}>
+                  {item.icon}
+                  <span>{item.title}</span>
+                </MenuItem>
+              </Link>
+            </BrowserRouter>
+          ))}
+        </MenuList>
+      
+        <MenuItem className="isFooter" onClick={() => setIsCollapsed(!isCollapsed)}>
+          <BsArrowBarLeft />
+          <span>Collapse</span>
+        </MenuItem>
+      </Flex>
+    </Wrapper>
+  );
+}
+
+export default SideBar;
