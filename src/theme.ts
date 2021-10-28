@@ -3,10 +3,10 @@ import { extendTheme } from "@chakra-ui/react"
 
 const theme = extendTheme({
   baseStyle: ({ colorMode }: any) => ({
-    bg: colorMode === "dark" ? "green.300" : "green.500",
+    bg: colorMode === "dark" ? "green.300" : "#364670",
     color: colorMode === "dark" ? "dark" : "white",
   }),
-  
+    
   colors: {
     purple: "#6A4BFF",
     purple50: '#F8F6FF',

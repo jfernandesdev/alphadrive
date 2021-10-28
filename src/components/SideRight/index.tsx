@@ -18,6 +18,7 @@ import { BoxProfile } from './styles';
 import { FiChevronDown } from 'react-icons/fi';
 
 import { useLayout  } from '../../contexts/LayoutContext';
+import { ColorModeSwitcher } from '../ColorModeSwitcher';
 
 const SideRight: React.FC = () => {
   const {user} = useLayout();
@@ -63,7 +64,8 @@ const SideRight: React.FC = () => {
     </Menu>
 
   </BoxProfile>
- tstwwewrrr
+    
+    <ColorModeSwitcher />
   </Box>
   );
 }
