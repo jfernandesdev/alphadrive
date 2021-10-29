@@ -25,6 +25,7 @@ export const MenuList = styled.ul`
   max-height: 420px;
   overflow-y: scroll;
   padding-right: 5px;
+  margin-top: -30px;
   
 
   &::-webkit-scrollbar{
