@@ -1,10 +1,13 @@
 import React from 'react';
 
-import { BsImageFill, BsMusicNoteBeamed, BsCameraVideoFill, BsThreeDots, BsDownload } from 'react-icons/bs';
-import { FaFile, FaFolder } from 'react-icons/fa';
-import { AiFillFileUnknown, AiOutlineLink, AiOutlineEye } from 'react-icons/ai';
-import { FiCopy, FiTrash2, FiStar } from 'react-icons/fi';
-import { BiEditAlt, BiShareAlt } from 'react-icons/bi';
+import { 
+  BsImageFill, BsMusicNoteBeamed, BsCameraVideoFill, BsThreeDots, BsDownload,
+  FaFile, FaFolder,
+  HiOutlineTrash, HiOutlineStar, HiOutlineShare,
+  AiFillFileUnknown, AiOutlineLink, AiOutlineEye,
+  FiCopy,
+  BiEditAlt
+} from '../../styles/Icons';
 
 import {
   Table,
@@ -82,13 +85,13 @@ const TableFiles: React.FC<TableFileProps> = ({list}) => {
                   border={0}
                 />
                 <MenuList>
-                  <MenuItem icon={<BiShareAlt />}> Share </MenuItem>
+                  <MenuItem icon={<HiOutlineShare />}> Share </MenuItem>
                   <MenuItem icon={<AiOutlineLink />}> Get Link </MenuItem>
                   <MenuItem icon={<BsDownload />}> Download </MenuItem>
                   <MenuItem icon={<BiEditAlt />}> Rename </MenuItem>
                   <MenuItem icon={<FiCopy />}> Copy </MenuItem>
-                  <MenuItem icon={<FiTrash2 />}> Delete </MenuItem>
-                  <MenuItem icon={<FiStar />}> Star </MenuItem>
+                  <MenuItem icon={<HiOutlineTrash />}> Delete </MenuItem>
+                  <MenuItem icon={<HiOutlineStar />}> Star </MenuItem>
                   <MenuItem icon={<AiOutlineEye />}> View detail </MenuItem>
                 </MenuList>
               </Menu>

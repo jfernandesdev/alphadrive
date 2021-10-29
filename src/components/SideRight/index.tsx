@@ -15,10 +15,10 @@ import {
  } from '@chakra-ui/react';
 
 import { BoxProfile } from './styles';
-import { FiChevronDown } from 'react-icons/fi';
+import { FiChevronDown } from '../../styles/Icons';
 
 import { useLayout  } from '../../contexts/LayoutContext';
-import { ColorModeSwitcher } from '../ColorModeSwitcher';
+
 
 const SideRight: React.FC = () => {
   const {user} = useLayout();
@@ -65,7 +65,6 @@ const SideRight: React.FC = () => {
 
   </BoxProfile>
     
-    <ColorModeSwitcher />
   </Box>
   );
 }

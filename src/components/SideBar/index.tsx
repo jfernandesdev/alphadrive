@@ -5,8 +5,13 @@ import { Wrapper, Logo, MenuList, MenuItem } from './styles';
 
 import { useLayout } from '../../contexts/LayoutContext';
 
-import { HiOutlineViewGrid, HiOutlineShare, HiOutlineStar, HiOutlineTrash } from 'react-icons/hi';
-import { BsArrowBarLeft } from 'react-icons/bs';
+import { 
+  HiOutlineViewGrid, 
+  HiOutlineShare, 
+  HiOutlineStar, 
+  HiOutlineTrash, 
+  BsArrowBarLeft 
+} from '../../styles/Icons';
 
 import LogoImg from '../../assets/logo.svg';
 

@@ -8,8 +8,7 @@ import {
   IconButton,
  } from '@chakra-ui/react';
 
-import { BsSearch } from 'react-icons/bs';
-import { HiAdjustments } from 'react-icons/hi';
+import { BsSearch, HiAdjustments } from '../../styles/Icons';
 
 const InputSearch: React.FC = () => {
   return (

@@ -1,7 +1,6 @@
 import { Box, Flex, Heading } from "@chakra-ui/react";
 
-import { BsImageFill, BsMusicNoteBeamed, BsCameraVideoFill } from 'react-icons/bs';
-import { FaFile } from 'react-icons/fa';
+import { BsImageFill, BsMusicNoteBeamed, BsCameraVideoFill, FaFile } from '../styles/Icons';
 
 import { CardCategory } from '../components/CardCategory';
 import TableFiles from "../components/TableFiles";
