@@ -10,6 +10,7 @@ const theme = extendTheme({
   colors: {
     black: "#25546F",
     black_accent: "#364670",
+    dark_accent: "#425179",
     bg_dark_primary: "#1B1A30",
     dark: "#171725",
     dark_grey: "#696974",

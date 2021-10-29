@@ -84,7 +84,7 @@ const TableFiles: React.FC<TableFileProps> = ({list}) => {
                   variant="outline"
                   border={0}
                 />
-                <MenuList>
+                <MenuList minW={0}>
                   <MenuItem icon={<HiOutlineShare />}> Share </MenuItem>
                   <MenuItem icon={<AiOutlineLink />}> Get Link </MenuItem>
                   <MenuItem icon={<BsDownload />}> Download </MenuItem>
