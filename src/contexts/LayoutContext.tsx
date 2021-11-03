@@ -36,15 +36,15 @@ export function LayoutContextProvider({ children} : LayoutContextProviderProps) 
     email: "jfernandesdev@gmail.com",
     avatar: "https://i.ibb.co/4Wp88YP/foto-perfil.jpg",
   }
-
+  
   return (
     <LayoutContext.Provider value={{user, isCollapsed, setIsCollapsed}}>
       <Grid className={isCollapsed ? 'menuIsCollapsed' : ''}>
         <SideBar />
-        <div>
-          <InputSearch />
-          {children}
-        </div>
+          <div>
+            <InputSearch />
+            {children}
+          </div>
         <SideRight />
       </Grid>
     </LayoutContext.Provider>

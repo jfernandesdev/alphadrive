@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const WrapperTable = styled.div`
-  max-height: 255px;
+  
   overflow-y: scroll;
 
   table { 

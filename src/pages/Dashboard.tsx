@@ -3,7 +3,7 @@ import { Box, Flex, Heading } from "@chakra-ui/react";
 import { BsImageFill, BsMusicNoteBeamed, BsCameraVideoFill, FaFile } from '../styles/Icons';
 
 import { CardCategory } from '../components/CardCategory';
-import TableFiles from "../components/TableFiles";
+import { TableFiles } from "../components/TableFiles";
 
 const categoryList = [
   {
@@ -95,7 +95,7 @@ export function Dashboard() {
       <Heading as="h5" size="sm" mt={7}>Recent</Heading>
 
 
-      <TableFiles list={recentList}/>
+      <TableFiles list={recentList} />
 
     </Box>
     

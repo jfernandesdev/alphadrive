@@ -25,6 +25,7 @@ const theme = extendTheme({
     purple200: '#E3DDFF',
 
     yellow: "#F6C949",
+    yellow_star: "#FFD12C",
     red: "#F95050",
     green: "#3BC963",
     orange: "#FF6B2C",

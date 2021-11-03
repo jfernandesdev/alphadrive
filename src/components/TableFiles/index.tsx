@@ -19,13 +19,16 @@ import {
   MenuButton,
   MenuList,
   MenuItem,
-  Heading
+  Heading,
+  AvatarGroup,
+  Avatar
 } from "@chakra-ui/react"
 
 import { WrapperTable } from './styles';
 
 
 interface TableFileProps {
+  type?: string,
   list: {
     id: number,
     categorySlug: string,
@@ -36,7 +39,7 @@ interface TableFileProps {
   }[];
 }
 
-const TableFiles: React.FC<TableFileProps> = ({list}) => {
+export const TableFiles: React.FC<TableFileProps> = ({type, list}) => {
 
   function slugToIconConverter(slug: string) {
     switch(slug){
@@ -62,7 +65,7 @@ const TableFiles: React.FC<TableFileProps> = ({list}) => {
   }
 
   return (
-    <WrapperTable>
+    <WrapperTable style={{maxHeight: type == null ? '255px' : '70vh'}}>
       <Table>
         <Tbody>
           {list.map((item,index) => (
@@ -74,7 +77,29 @@ const TableFiles: React.FC<TableFileProps> = ({list}) => {
                 </Heading>
               </Td>
               <Td color="gray"><span>{item.fileType}</span></Td>
-              <Td isNumeric color="gray"><span>{item.fileSize}</span></Td>
+             
+              {(type == null || type == 'deleted') &&
+                <Td isNumeric color="gray"><span>{item.fileSize} </span></Td>
+              }
+
+              {type == 'shared' &&
+                <Td>
+                  <AvatarGroup size="sm" max={3} borderColor="purple">
+                    <Avatar name="Ryan Florence" src="https://bit.ly/ryan-florence" bg="purple" color="white" borderWidth="1px"/>
+                    <Avatar name="Segun Adebayo" src="https://bit.ly/sage-adebayo" bg="purple" color="white" borderWidth="1px"/>
+                    <Avatar name="Kent Dodds" src="https://bit.ly/kent-c-dodds" bg="purple" color="white" borderWidth="1px"/>
+                    <Avatar name="Prosper Otemuyiwa" src="https://bit.ly/prosper-baba" bg="purple" color="white" borderWidth="1px"/>
+                    <Avatar name="Christian Nwamba" src="https://bit.ly/code-beast" bg="purple" color="white" borderWidth="1px"/>
+                  </AvatarGroup>
+                </Td>
+              }
+
+              {type == 'starred' &&
+                <Td>
+                  <HiOutlineStar fill="#FFD12C" stroke="#FFD12C" size={20}/>
+                </Td>
+              }
+
               <Td isNumeric>
               <Menu>
                 <MenuButton
@@ -103,5 +128,3 @@ const TableFiles: React.FC<TableFileProps> = ({list}) => {
     </WrapperTable>
   );
 }
-
-export default TableFiles;
