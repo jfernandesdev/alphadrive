@@ -12,12 +12,9 @@ type CardCategoryProps = {
   numberOfFiles: number,
 }
 
-export const CardCategory: React.FC<CardCategoryProps> = ({
-  title, icon, colorPrimary, numberOfFiles
-}) => {
+export const CardCategory: React.FC<CardCategoryProps> = ({ title, icon, colorPrimary, numberOfFiles }) => {
   return (
     <Card>
-
       <WrapperIcon>
         <div style={{background: `var(--chakra-colors-${colorPrimary})` }} />
         <Icon as={icon} color={colorPrimary} />

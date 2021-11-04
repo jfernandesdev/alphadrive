@@ -12,7 +12,7 @@ export function App() {
     <BrowserRouter>
       <LayoutContextProvider>
         <Switch>
-          <Route path='/' exact component={Dashboard} />
+          <Redirect exact from="/" to="/dashboard" />
           <Route path='/dashboard' component={Dashboard} />
           <Route path='/deleted' component={Deleted} />
           <Route path='/shared' component={Shared} />

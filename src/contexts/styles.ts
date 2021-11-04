@@ -1,13 +1,20 @@
 import styled from 'styled-components';
 
 // SideBar (SB)
+// Input Search (SH)
 // Content (CT)
+// Profile Button (PB)
 // SideRight (SR)
 
 export const Grid = styled.div`
   display: grid;
   grid-template-columns: 260px auto 300px;
-  grid-template-areas:  'SB CT SR';
+  grid-template-rows: 100px auto;
+  grid-template-areas:  
+  'SB SH PB'
+  'SB CT CT'
+  ;
+
   height: 100vh;
 
   &.menuIsCollapsed {
@@ -34,4 +41,9 @@ export const Grid = styled.div`
       }
     }
   } 
+`;
+
+
+export const Container = styled.div`
+  grid-area: CT;
 `;

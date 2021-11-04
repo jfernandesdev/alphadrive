@@ -2,11 +2,8 @@ import React from 'react';
 
 import { 
   BsImageFill, BsMusicNoteBeamed, BsCameraVideoFill, BsThreeDots, BsDownload,
-  FaFile, FaFolder,
-  HiOutlineTrash, HiOutlineStar, HiOutlineShare,
-  AiFillFileUnknown, AiOutlineLink, AiOutlineEye,
-  FiCopy,
-  BiEditAlt
+  FaFile, FaFolder, HiOutlineTrash, HiOutlineStar, HiOutlineShare,
+  AiFillFileUnknown, AiOutlineLink, AiOutlineEye, FiCopy, BiEditAlt
 } from '../../styles/Icons';
 
 import {

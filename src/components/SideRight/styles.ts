@@ -1,18 +1,8 @@
 import styled from 'styled-components';
 
-export const BoxProfile = styled.div`
-  h6, p {
-    max-width: 90%;
-    padding-left: 10px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  svg {
-    min-width: 20px;
-    margin-left: -20px;
-  }  
+export const Container = styled.div`
+  width: 300px;
+  padding: 0px 30px;
 `;
 
 export const AddNewButton = styled.div`
@@ -58,9 +48,6 @@ export const WrapperCircularProgress = styled.div`
   }
 
   .chakra-progress {
-    /* display: flex;
-    justify-content: start;
-    align-items: start; */
     > div {
       span {
         font-size: 30px;

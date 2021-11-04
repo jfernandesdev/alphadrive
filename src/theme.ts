@@ -6,7 +6,7 @@ const theme = extendTheme({
     bg: colorMode === "dark" ? "green.300" : "#364670",
     color: colorMode === "dark" ? "dark" : "white",
   }),
-    
+
   colors: {
     black: "#25546F",
     black_accent: "#364670",
@@ -37,12 +37,18 @@ const theme = extendTheme({
   },
 
   styles: {
-    global: {
+    global: ({ colorMode }: any) => ({
       "html, body": {
         overflow: "hidden",
         fontFamily: "Poppins, system-ui, sans-serif",
-      }
-    }
+      },
+      ".sidebar": {
+        background: colorMode === "dark" && "bg_dark_primary",
+        li: {
+          color: colorMode === "dark" && "white",
+        }
+      },
+    })
   }
 })
 export default theme
