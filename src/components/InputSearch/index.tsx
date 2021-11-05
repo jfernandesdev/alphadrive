@@ -1,8 +1,10 @@
 import React from 'react';
-import { Box, InputGroup, Input, InputLeftElement, IconButton } from '@chakra-ui/react';
-import { BsSearch, HiAdjustments } from '../../styles/Icons';
+import { InputGroup, Input, InputLeftElement } from '@chakra-ui/react';
+
+import { BsSearch } from '../../styles/Icons';
 
 import { Container } from './styles';
+import { SortFilter } from '../SortFilter';
 
 const InputSearch: React.FC = () => {
   return (
@@ -19,12 +21,8 @@ const InputSearch: React.FC = () => {
           placeholder="Search" 
         />
       
-        <IconButton
-          colorScheme="var(--chakra-colors-purple);"
-          aria-label="Ajustes"
-          marginLeft={3}
-          icon={<HiAdjustments />}
-        />
+        <SortFilter />
+
       </InputGroup>
     </Container>
 )}
