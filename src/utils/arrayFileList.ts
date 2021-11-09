@@ -5,7 +5,16 @@ export const fileList = [
     fileName: 'My Report.docx',
     fileType: 'DOCX File',
     fileSize: '7 MB',
-    fileUrl: '#' 
+    fileUrl: '#',
+    isDeleted: true,
+    isStarred: true,
+    shared: [
+      { username: 'Fulano de Tal', avatar: 'https://randomuser.me/api/portraits/men/4.jpg' },
+      { username: 'Fulano de Tal', avatar: 'https://randomuser.me/api/portraits/men/1.jpg' },
+      { username: 'Ana de Tal', avatar: 'https://randomuser.me/api/portraits/women/1.jpg' },
+      { username: 'Fulano de Tal', avatar: 'https://randomuser.me/api/portraits/men/2.jpg' },
+      { username: 'Ana de Tal', avatar: 'https://randomuser.me/api/portraits/women/2.jpg' },
+    ]
   },
   {
     id: 2,
@@ -13,15 +22,28 @@ export const fileList = [
     fileName: 'Backsound.mp3',
     fileType: 'MP3 File',
     fileSize: '5.6 MB',
-    fileUrl: '#' 
+    fileUrl: '#',
+    isDeleted: true,
+    isStarred: true,
+    shared: [
+      { username: 'Ana de Tal', avatar: 'https://randomuser.me/api/portraits/women/4.jpg' },
+      { username: 'Fulano de Tal', avatar: 'https://randomuser.me/api/portraits/men/5.jpg' },
+      { username: 'Ana de Tal', avatar: 'https://randomuser.me/api/portraits/women/5.jpg' },
+    ] 
   },
   {
     id: 3,
     categorySlug: 'image',
-    fileName: 'Backsound.mp3',
-    fileType: 'MP3 File',
-    fileSize: '5.6 MB',
-    fileUrl: '#' 
+    fileName: 'Artboard-1.png',
+    fileType: 'PNG File',
+    fileSize: '2.3 MB',
+    fileUrl: '#',
+    isDeleted: true,
+    isStarred: true,
+    shared: [
+      { username: 'Fulano de Tal', avatar: 'https://randomuser.me/api/portraits/men/6.jpg' },
+      { username: 'Ana de Tal', avatar: 'https://randomuser.me/api/portraits/women/6.jpg' },
+    ] 
   },
   {
     id: 4,
@@ -29,7 +51,13 @@ export const fileList = [
     fileName: 'Final Present.mp4',
     fileType: 'MP4 File',
     fileSize: '154 MB',
-    fileUrl: '#' 
+    fileUrl: '#',
+    isDeleted: true,
+    isStarred: true,
+    shared: [
+      { username: 'Ana de Tal', avatar: 'https://randomuser.me/api/portraits/women/8.jpg' },
+      { username: 'Fulano de Tal', avatar: 'https://randomuser.me/api/portraits/men/13.jpg' },
+    ] 
   },
   {
     id: 5,
@@ -37,7 +65,17 @@ export const fileList = [
     fileName: 'Work',
     fileType: 'Folder',
     fileSize: '8.9 GB',
-    fileUrl: '#' 
+    fileUrl: '#',
+    isDeleted: true,
+    isStarred: true,
+    shared: [
+      { username: 'Fulano de Tal', avatar: 'https://randomuser.me/api/portraits/men/10.jpg' },
+      { username: 'Ana de Tal', avatar: 'https://randomuser.me/api/portraits/women/10.jpg' },
+      { username: 'Fulano de Tal', avatar: 'https://randomuser.me/api/portraits/men/11.jpg' },
+      { username: 'Ana de Tal', avatar: 'https://randomuser.me/api/portraits/women/11.jpg' },
+      { username: 'Fulano de Tal', avatar: 'https://randomuser.me/api/portraits/men/12.jpg' },
+      { username: 'Ana de Tal', avatar: 'https://randomuser.me/api/portraits/women/12.jpg' },
+    ] 
   },
   {
     id: 6,
@@ -45,7 +83,12 @@ export const fileList = [
     fileName: 'My Report.docx',
     fileType: 'DOCX File',
     fileSize: '15 MB',
-    fileUrl: '#' 
+    fileUrl: '#',
+    isDeleted: true,
+    isStarred: true,
+    shared: [
+      { username: 'Ana de Tal', avatar: 'https://randomuser.me/api/portraits/women/13.jpg' },
+    ] 
   },
   {
     id: 7,
@@ -53,7 +96,15 @@ export const fileList = [
     fileName: 'Avatar.png',
     fileType: 'PNG File',
     fileSize: '2 MB',
-    fileUrl: '#' 
+    fileUrl: '#',
+    isDeleted: true,
+    isStarred: true,
+    shared: [
+      { username: 'Fulano de Tal', avatar: 'https://randomuser.me/api/portraits/men/14.jpg' },
+      { username: 'Ana de Tal', avatar: 'https://randomuser.me/api/portraits/women/14.jpg' },
+      { username: 'Fulano de Tal', avatar: 'https://randomuser.me/api/portraits/men/15.jpg' },
+      { username: 'Ana de Tal', avatar: 'https://randomuser.me/api/portraits/women/15.jpg' },
+    ] 
   },
   {
     id: 8,
@@ -61,7 +112,15 @@ export const fileList = [
     fileName: 'Mountain.mp4',
     fileType: 'MP4 File',
     fileSize: '74 MB',
-    fileUrl:  '#' 
+    fileUrl:  '#',
+    isDeleted: true,
+    isStarred: true,
+    shared: [
+      { username: 'Fulano de Tal', avatar: 'https://randomuser.me/api/portraits/men/16.jpg' },
+      { username: 'Ana de Tal', avatar: 'https://randomuser.me/api/portraits/women/16.jpg' },
+      { username: 'Fulano de Tal', avatar: 'https://randomuser.me/api/portraits/men/17.jpg' },
+      { username: 'Ana de Tal', avatar: 'https://randomuser.me/api/portraits/women/17.jpg' },
+    ] 
   },
   {
     id: 9,
@@ -69,7 +128,15 @@ export const fileList = [
     fileName: 'Finance.xlsx',
     fileType: 'XLSX File',
     fileSize: '8.9 MB',
-    fileUrl: '#' 
+    fileUrl: '#',
+    isDeleted: true,
+    isStarred: true,
+    shared: [
+      { username: 'Fulano de Tal', avatar: 'https://randomuser.me/api/portraits/men/18.jpg' },
+      { username: 'Ana de Tal', avatar: 'https://randomuser.me/api/portraits/women/18.jpg' },
+      { username: 'Fulano de Tal', avatar: 'https://randomuser.me/api/portraits/men/19.jpg' },
+      { username: 'Ana de Tal', avatar: 'https://randomuser.me/api/portraits/women/19.jpg' },
+    ] 
   },
   {
     id: 10,
@@ -77,7 +144,15 @@ export const fileList = [
     fileName: 'Template.docx',
     fileType: 'DOCX File',
     fileSize: '3 MB',
-    fileUrl: '#' 
+    fileUrl: '#',
+    isDeleted: true,
+    isStarred: true,
+    shared: [
+      { username: 'Fulano de Tal', avatar: 'https://randomuser.me/api/portraits/men/20.jpg' },
+      { username: 'Ana de Tal', avatar: 'https://randomuser.me/api/portraits/women/21.jpg' },
+      { username: 'Fulano de Tal', avatar: 'https://randomuser.me/api/portraits/men/22.jpg' },
+      { username: 'Ana de Tal', avatar: 'https://randomuser.me/api/portraits/women/22.jpg' },
+    ] 
   },
   {
     id: 11,
@@ -85,7 +160,15 @@ export const fileList = [
     fileName: 'Final Present.mp4',
     fileType: 'MP4 File',
     fileSize: '154 MB',
-    fileUrl: '#' 
+    fileUrl: '#',
+    isDeleted: true,
+    isStarred: true,
+    shared: [
+      { username: 'Fulano de Tal', avatar: 'https://randomuser.me/api/portraits/men/23.jpg' },
+      { username: 'Ana de Tal', avatar: 'https://randomuser.me/api/portraits/women/23.jpg' },
+      { username: 'Fulano de Tal', avatar: 'https://randomuser.me/api/portraits/men/24.jpg' },
+      { username: 'Ana de Tal', avatar: 'https://randomuser.me/api/portraits/women/24.jpg' },
+    ] 
   },
   {
     id: 12,
@@ -93,6 +176,14 @@ export const fileList = [
     fileName: 'MV Clip 4K.mp4',
     fileType: 'MP4 File',
     fileSize: '20 GB',
-    fileUrl: '#' 
+    fileUrl: '#',
+    isDeleted: true,
+    isStarred: true,
+    shared: [
+      { username: 'Fulano de Tal', avatar: 'https://randomuser.me/api/portraits/men/25.jpg' },
+      { username: 'Ana de Tal', avatar: 'https://randomuser.me/api/portraits/women/25.jpg' },
+      { username: 'Fulano de Tal', avatar: 'https://randomuser.me/api/portraits/men/26.jpg' },
+      { username: 'Ana de Tal', avatar: 'https://randomuser.me/api/portraits/women/26.jpg' },
+    ] 
   }
 ]

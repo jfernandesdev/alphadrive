@@ -32,7 +32,11 @@ interface TableFileProps {
     fileName: string,
     fileType: string,
     fileSize: string,
-    fileUrl: string
+    fileUrl: string,
+
+    isDeleted?: boolean,
+    isStarred?: boolean,
+    shared?: { username: string, avatar: string }[]
   }[];
 }
 
@@ -62,7 +66,7 @@ export const TableFiles: React.FC<TableFileProps> = ({type, list}) => {
   }
 
   return (
-    <WrapperTable style={{maxHeight: type == null ? '255px' : '70vh'}}>
+    <WrapperTable style={{maxHeight: type == null ? '265px' : '65vh'}}>
       <Table>
         <Tbody>
           {list.map((item,index) => (
@@ -82,11 +86,9 @@ export const TableFiles: React.FC<TableFileProps> = ({type, list}) => {
               {type == 'shared' &&
                 <Td>
                   <AvatarGroup size="sm" max={3} borderColor="purple">
-                    <Avatar name="Ryan Florence" src="https://bit.ly/ryan-florence" bg="purple" color="white" borderWidth="1px"/>
-                    <Avatar name="Segun Adebayo" src="https://bit.ly/sage-adebayo" bg="purple" color="white" borderWidth="1px"/>
-                    <Avatar name="Kent Dodds" src="https://bit.ly/kent-c-dodds" bg="purple" color="white" borderWidth="1px"/>
-                    <Avatar name="Prosper Otemuyiwa" src="https://bit.ly/prosper-baba" bg="purple" color="white" borderWidth="1px"/>
-                    <Avatar name="Christian Nwamba" src="https://bit.ly/code-beast" bg="purple" color="white" borderWidth="1px"/>
+                  {item.shared && item.shared.map((element, index) => (
+                    <Avatar key={element.username+index} name={element.username} src={element.avatar} bg="purple" color="white" borderWidth="1px"/>
+                  ))} 
                   </AvatarGroup>
                 </Td>
               }

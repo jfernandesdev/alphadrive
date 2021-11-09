@@ -4,3 +4,4 @@ export { BsImageFill, BsMusicNoteBeamed, BsCameraVideoFill, BsThreeDots, BsDownl
 export { AiFillFileUnknown, AiOutlineLink, AiOutlineEye } from 'react-icons/ai';
 export { FiCopy, FiChevronDown } from 'react-icons/fi';
 export { BiEditAlt } from 'react-icons/bi';
+export { VscCircleFilled } from 'react-icons/vsc';
