@@ -1,8 +1,6 @@
 import React from 'react';
-
-import { HiAdjustments } from '../../styles/Icons';
-
 import {
+  useDisclosure, 
   IconButton,
   Button, 
   Drawer, 
@@ -11,19 +9,17 @@ import {
   DrawerContent, 
   DrawerFooter, 
   DrawerHeader, 
-  DrawerOverlay, 
-  Input,
+  DrawerOverlay,
   Text, 
-  useDisclosure, 
   Flex,
   Icon,
   MenuDivider,
   Stack,
-  Checkbox,
-  CheckboxGroup,
   RadioGroup,
   Radio
 } from '@chakra-ui/react';
+
+import { HiAdjustments } from '../../styles/Icons';
 
 export const SortFilter: React.FC = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
@@ -31,11 +27,11 @@ export const SortFilter: React.FC = () => {
   return (
     <>
       <IconButton
-          colorScheme="var(--chakra-colors-purple);"
-          aria-label="Ajustes"
-          marginLeft={3}
-          icon={<HiAdjustments />}
-          onClick={onOpen}
+        colorScheme="var(--chakra-colors-purple);"
+        aria-label="Ajustes"
+        marginLeft={3}
+        icon={<HiAdjustments />}
+        onClick={onOpen}
       />
 
       <Drawer isOpen={isOpen} placement="right" onClose={onClose} >
@@ -67,7 +63,6 @@ export const SortFilter: React.FC = () => {
                 <Radio value="desc">Descending</Radio>
               </Stack>
             </RadioGroup>
-            
           </DrawerBody>
 
           <DrawerFooter>

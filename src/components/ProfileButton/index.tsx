@@ -1,17 +1,5 @@
 import React from 'react';
-
-import { 
- Text, 
-  Menu,
-  Flex,
-  Avatar, 
-  Heading, 
-  MenuButton, 
-  MenuList, 
-  MenuItem, 
-  MenuDivider,
-  Center,
- } from '@chakra-ui/react';
+import { Text, Menu, Flex, Avatar, Heading, MenuButton, MenuList, MenuItem, MenuDivider,Center } from '@chakra-ui/react';
 
 import { BoxProfile } from './styles';
 import { FiChevronDown } from '../../styles/Icons';
@@ -48,7 +36,6 @@ export const ProfileButton: React.FC = () => {
             </Flex>
             <FiChevronDown />
           </Center>
-        
         </Flex>
       </MenuButton>
       

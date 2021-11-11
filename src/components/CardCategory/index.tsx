@@ -1,6 +1,5 @@
 import React from 'react';
-import { Heading, Icon } from '@chakra-ui/react';
-
+import { Box, Heading, Icon } from '@chakra-ui/react';
 import type { IconType } from 'react-icons';
 
 import { Card, WrapperIcon } from './styles';
@@ -16,7 +15,7 @@ export const CardCategory: React.FC<CardCategoryProps> = ({ title, icon, colorPr
   return (
     <Card>
       <WrapperIcon>
-        <div style={{background: `var(--chakra-colors-${colorPrimary})` }} />
+        <Box style={{background: `var(--chakra-colors-${colorPrimary})` }} />
         <Icon as={icon} color={colorPrimary} />
       </WrapperIcon>
 

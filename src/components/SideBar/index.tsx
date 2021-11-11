@@ -3,7 +3,6 @@ import { Link, useLocation } from 'react-router-dom';
 import { Flex, Image, Text, Icon } from '@chakra-ui/react';
 
 import { useLayout } from '../../contexts/LayoutContext';
-
 import { menuItems } from '../../utils/arrayMenuItems';
 
 import { BsArrowBarLeft } from '../../styles/Icons';

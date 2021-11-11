@@ -16,7 +16,7 @@ import {
 import { Container, AddNewButton, WrapperCircularProgress, CardGoPremium } from './styles';
 import { HiPlus, FaFolderPlus } from '../../styles/Icons';
 
-const SideRight: React.FC = () => {
+const SideRightDashboard: React.FC = () => {
   return (
     <Container>
       <AddNewButton>
@@ -51,4 +51,4 @@ const SideRight: React.FC = () => {
   );
 }
 
-export default SideRight;
+export default SideRightDashboard;

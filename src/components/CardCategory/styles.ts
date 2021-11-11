@@ -16,7 +16,6 @@ export const Card = styled.div`
   &:hover {
     box-shadow: 0px 2px 12px rgba(0,0,0,0.1);
   }
-
   > h6 { 
     margin-bottom: 5px;
   }
@@ -25,7 +24,6 @@ export const Card = styled.div`
     font-size: 11px;
   }
 `;
-
 
 export const WrapperIcon = styled.div`
   width: 60px;

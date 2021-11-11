@@ -1,7 +1,7 @@
 import { Box, Flex, Heading } from "@chakra-ui/react";
 import styled from 'styled-components';
 import { CardCategory } from '../components/CardCategory';
-import SideRight from "../components/SideRight";
+import SideRightDashboard from "../components/SideRightDashboard";
 import { TableFiles } from "../components/TableFiles";
 
 import { categoryList } from '../utils/arrayCategoryList';
@@ -35,7 +35,7 @@ export function Dashboard() {
       <TableFiles list={fileList} />
     </Box>
 
-     <SideRight />
+     <SideRightDashboard />
     </Container>
   );
 }

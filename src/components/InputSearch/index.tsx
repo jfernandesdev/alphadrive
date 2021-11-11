@@ -1,10 +1,9 @@
 import React from 'react';
 import { InputGroup, Input, InputLeftElement } from '@chakra-ui/react';
 
-import { BsSearch } from '../../styles/Icons';
-
 import { Container } from './styles';
 import { SortFilter } from '../SortFilter';
+import { BsSearch } from '../../styles/Icons';
 
 const InputSearch: React.FC = () => {
   return (
