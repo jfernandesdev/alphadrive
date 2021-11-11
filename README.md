@@ -32,7 +32,16 @@ Em breve ...
 
 ### Desktop (screenshot):
 
-### Mobile e Tablet (screenshot):
+| Dashbord        | Menu encolhido | Filtro selecionado |
+| ---             | ---            | ---                |
+| <img src="https://github.com/jfernandesdev/alphadrive/blob/f459287d96f42216a290b3b15bfd9fc58eca5670/public/layout/layout_1.png" /> | <img src="https://github.com/jfernandesdev/alphadrive/blob/f459287d96f42216a290b3b15bfd9fc58eca5670/public/layout/layout_2.png" /> | <img src="https://github.com/jfernandesdev/alphadrive/blob/f459287d96f42216a290b3b15bfd9fc58eca5670/public/layout/layout_3.png" />
+
+|Shared  (Table) | Shared (Cards)  | Deleted            |
+| ---            | ---             | ---                |
+| <img src="https://github.com/jfernandesdev/alphadrive/blob/f459287d96f42216a290b3b15bfd9fc58eca5670/public/layout/layout_4.png" /> | <img src="https://github.com/jfernandesdev/alphadrive/blob/f459287d96f42216a290b3b15bfd9fc58eca5670/public/layout/layout_5.png" /> | <img src="https://github.com/jfernandesdev/alphadrive/blob/f459287d96f42216a290b3b15bfd9fc58eca5670/public/layout/layout_6.png" />
+
+
+### Mobile e Tablet:
 
 (Em breve ...)
 
