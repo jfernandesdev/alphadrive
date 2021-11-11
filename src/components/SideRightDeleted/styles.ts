@@ -9,7 +9,6 @@ export const Container = styled.div`
   }
 `;
 
-
 export const WrapperTrash = styled.div`
   background: var(--chakra-colors-purple50);
   display: flex;
@@ -20,8 +19,5 @@ export const WrapperTrash = styled.div`
   color: var(--chakra-colors-grey);
   border-radius: 20px;
   padding: 30px;
-  height: 92%;
-  
-
-
+  height: calc(100% - 48px);
 `;

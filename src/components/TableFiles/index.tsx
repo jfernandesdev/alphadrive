@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { Table, Tbody, Tr, Td, Heading, AvatarGroup, Avatar } from "@chakra-ui/react"
 
 import { ThreeDotsButton } from '../ThreeDotsButton';
@@ -25,22 +24,19 @@ export interface ListOfFileProps {
 
 export const TableFiles: React.FC<ListOfFileProps> = ({type, list}) => {
   return (
-    <WrapperTable style={{maxHeight: type == null ? '265px' : '65vh'}}>
+    <WrapperTable style={{maxHeight: type == null ? '35vh' : '65vh'}}>
       <Table>
         <Tbody>
           {list.map((item,index) => (
             <Tr key={index}>
-              <Td width="40px">{SlugToIconConverter(item.categorySlug)}</Td>
-              <Td>
-                <Heading as="h6" size="xs"> {item.fileName} </Heading>
-              </Td>
+              <Td width="40px"> {SlugToIconConverter(item.categorySlug)} </Td>
+              <Td> <Heading as="h6" size="xs"> {item.fileName} </Heading> </Td>
               <Td color="gray"><span>{item.fileType}</span></Td>
-             
-              {(type == null || type == 'deleted') &&
-                <Td isNumeric color="gray"><span>{item.fileSize} </span></Td>
-              }
 
-              {type == 'shared' &&
+              {(type == null || type === 'deleted') &&
+                <Td isNumeric color="gray"> <span>{item.fileSize} </span> </Td>
+              }
+              {type === 'shared' &&
                 <Td>
                   <AvatarGroup size="sm" max={3} borderColor="purple">
                   {item.shared && item.shared.map((element, index) => (
@@ -49,13 +45,11 @@ export const TableFiles: React.FC<ListOfFileProps> = ({type, list}) => {
                   </AvatarGroup>
                 </Td>
               }
-
-              {type == 'starred' &&
+              {type === 'starred' &&
                 <Td>
                   <HiOutlineStar fill="#FFD12C" stroke="#FFD12C" size={20}/>
                 </Td>
               }
-
               <Td isNumeric>
                 <ThreeDotsButton />
               </Td>

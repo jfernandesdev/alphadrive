@@ -1,8 +1,8 @@
 import React from 'react';
-import { Box, Heading, Icon } from '@chakra-ui/react';
+import { Flex, Box, Heading, Text, Icon } from '@chakra-ui/react';
 import type { IconType } from 'react-icons';
 
-import { Card, WrapperIcon } from './styles';
+import { WrapperIcon } from './styles';
 
 type CardCategoryProps = {
   title: string,
@@ -13,14 +13,25 @@ type CardCategoryProps = {
 
 export const CardCategory: React.FC<CardCategoryProps> = ({ title, icon, colorPrimary, numberOfFiles }) => {
   return (
-    <Card>
+    <Flex 
+      direction="column" 
+      justifyContent="center" 
+      height={150} 
+      borderWidth={1} 
+      borderRadius={15} 
+      padding={15}
+      my={3}
+      cursor="pointer" 
+      transition="box-shadow 0.2s"
+      _hover={{ boxShadow: "0px 2px 10px rgba(0,0,0,0.1)" }}
+      >
       <WrapperIcon>
-        <Box style={{background: `var(--chakra-colors-${colorPrimary})` }} />
-        <Icon as={icon} color={colorPrimary} />
+      <Box style={{background: `var(--chakra-colors-${colorPrimary})` }} />
+      <Icon as={icon} color={colorPrimary} />
       </WrapperIcon>
 
-      <Heading as="h6" size="xs">{title}</Heading>
-      <span>{numberOfFiles} files</span>
-    </Card>
+      <Heading as="h6" size="xs" mb={1}>{title}</Heading>
+      <Text fontSize={11} color="gray">{numberOfFiles} files</Text>
+    </Flex>
   );
 }

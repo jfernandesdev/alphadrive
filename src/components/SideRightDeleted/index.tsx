@@ -6,7 +6,7 @@ import { HiOutlineTrash, VscCircleFilled } from '../../styles/Icons';
 
 import { trashStatistic } from '../../utils/arrayTrashStatistic';
 
-const SideRightDeleted: React.FC = () => {
+export const SideRightDeleted: React.FC = () => {
   return (
     <Container>
       <WrapperTrash>
@@ -18,16 +18,14 @@ const SideRightDeleted: React.FC = () => {
         </Box>
 
         <Box width='100%' fontSize={13} color="var(--chakra-colors-black_accent);">
-          {trashStatistic.map(item => (
-            <>
-              <Flex key={item.category} justifyContent="space-between" alignItems="center" py={3}>
-                <Flex alignItems="center" color={`var(--chakra-colors-${item.colorPrimary});`}>
-                  <Icon as={VscCircleFilled} color="green.500" mr={2}/> 
-                  <Text fontWeight="bold">{item.category}</Text>
-                </Flex>
-                <Text>{item.consumedSpace}</Text>
+          {trashStatistic.map((item, index) => (
+            <Flex key={index} justifyContent="space-between" alignItems="center" py={3}>
+              <Flex alignItems="center" color={`var(--chakra-colors-${item.colorPrimary});`}>
+                <Icon as={VscCircleFilled} color="green.500" mr={2}/> 
+                <Text fontWeight="bold">{item.category}</Text>
               </Flex>
-            </>
+              <Text>{item.consumedSpace}</Text>
+            </Flex>
           ))}
         </Box>
 
@@ -41,10 +39,7 @@ const SideRightDeleted: React.FC = () => {
         >
           Empty now
         </Button>
-         
       </WrapperTrash>
     </Container>
   );
 }
-
-export default SideRightDeleted;

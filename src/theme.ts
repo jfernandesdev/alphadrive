@@ -1,6 +1,5 @@
 import { extendTheme } from "@chakra-ui/react"
 
-
 const theme = extendTheme({
   baseStyle: ({ colorMode }: any) => ({
     bg: colorMode === "dark" ? "green.300" : "#364670",

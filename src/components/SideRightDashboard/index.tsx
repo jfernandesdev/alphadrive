@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { 
   Box,
   Text, 
@@ -16,7 +15,7 @@ import {
 import { Container, AddNewButton, WrapperCircularProgress, CardGoPremium } from './styles';
 import { HiPlus, FaFolderPlus } from '../../styles/Icons';
 
-const SideRightDashboard: React.FC = () => {
+export const SideRightDashboard: React.FC = () => {
   return (
     <Container>
       <AddNewButton>
@@ -50,5 +49,3 @@ const SideRightDashboard: React.FC = () => {
     </Container>
   );
 }
-
-export default SideRightDashboard;
