@@ -2,7 +2,7 @@
 
 Projeto Web fictício desenvolvido para fins didáticos. TEMA: "Alpha Drive" 🗂☁️
 
-Estudo de caso com decisões próprias para fixar conceitos do ReactJs e aprender a utilizar os componentes da biblioteca Chakra UI. O tema do projeto foi baseado no layout do @pxdesign.id (perfil do instagram disponível em https://www.instagram.com/p/CPKLjN7nZ8E/)
+> Estudo de caso com decisões próprias para fixar conceitos do ReactJs e aprender a utilizar os componentes da biblioteca Chakra UI. O tema do projeto foi baseado no layout do @pxdesign.id (perfil do instagram disponível em https://www.instagram.com/p/CPKLjN7nZ8E/)
 
 ### Descrição:
 
