@@ -14,5 +14,14 @@ export const BoxProfile = styled.div`
   svg {
     min-width: 20px;
     margin-left: -20px;
-  }  
+  }
+  
+  @media(max-width: 768px) {
+    position: absolute;
+    right: 0;
+    
+    h6, p, svg {
+      display: none;
+    }
+  }
 `;

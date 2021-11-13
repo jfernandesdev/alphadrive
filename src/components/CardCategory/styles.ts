@@ -9,15 +9,15 @@ export const WrapperIcon = styled.div`
   justify-content: center;
 
   > div {
-    position: relative;
-    width: 60px;
+    margin-left: 25px;
+    min-width: 60px;
     height: 60px;
     border-radius: 12px;
     opacity: 0.12;
   }
   
   > svg {
-    position: absolute;
+    transform: translateX(-150%);
     width: 30px;
     height: 30px;
   }

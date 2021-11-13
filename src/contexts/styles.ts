@@ -8,6 +8,7 @@ import styled from 'styled-components';
 
 export const Grid = styled.div`
   display: grid;
+  height: 100vh;
   grid-template-columns: 260px auto 300px;
   grid-template-rows: 100px auto;
   grid-template-areas:  
@@ -15,7 +16,15 @@ export const Grid = styled.div`
   'SB CT CT'
   ;
 
-  height: 100vh;
+  @media(max-width: 768px) {
+    grid-template-columns: 100vw;
+    grid-template-rows: 60px 100px auto;
+    grid-template-areas:  
+    'LG  PB'
+    'SH SH'
+    'CT CT'
+    ;
+  }
 
   &.menuIsCollapsed {
     grid-template-columns: 100px auto 300px;

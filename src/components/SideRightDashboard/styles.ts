@@ -5,26 +5,6 @@ export const Container = styled.div`
   padding: 0px 30px;
 `;
 
-export const AddNewButton = styled.div`
-  width: 100%;
-  padding: 20px 0;
-
-  > button {
-    width: 100%;
-    font-weight: 300;
-    border-radius: 10px;
-
-    span {
-      display: inline-flex;
-      justify-content: center;
-
-      svg {
-        margin-left: 10px;
-      }
-    }
-  }
-`;
-
 export const WrapperCircularProgress = styled.div`
   background: var(--chakra-colors-purple50);
   display: flex;

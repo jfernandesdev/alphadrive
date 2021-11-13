@@ -24,6 +24,7 @@ export const CardCategory: React.FC<CardCategoryProps> = ({ title, icon, colorPr
       cursor="pointer" 
       transition="box-shadow 0.2s"
       _hover={{ boxShadow: "0px 2px 10px rgba(0,0,0,0.1)" }}
+      className="cardCategory"
       >
       <WrapperIcon>
       <Box style={{background: `var(--chakra-colors-${colorPrimary})` }} />

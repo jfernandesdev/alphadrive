@@ -13,12 +13,12 @@ export const ProfileButton: React.FC = () => {
       <Menu>
         <MenuButton
           py={1}
-          px={3}
+          px={{ base: "0", md: 3 }}
           mt={-2}
-          width='100%'
+          width={{ base: "auto", md: "100%" }}
           transition="all 0.2s"
           borderRadius="lg"
-          borderWidth="1px"
+          borderWidth={{ base: "0", md: "1px" }}
           textAlign="start"
           _focus={{ boxShadow: "outline" }}
         >

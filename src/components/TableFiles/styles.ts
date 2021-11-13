@@ -46,6 +46,7 @@ export const WrapperTable = styled.div`
  
   &::-webkit-scrollbar{
     width: 6px;
+    height: 6px;
   }
 
   &::-webkit-scrollbar-thumb {

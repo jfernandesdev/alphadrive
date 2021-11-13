@@ -6,8 +6,6 @@ export const Wrapper = styled.div`
   flex-direction: columns;
   padding: 30px 28px;
   background: var(--chakra-colors-purple50);
-  -webkit-transition: width 0.3s;
-  transition: width 0.3s;
 `;
 
 export const Logo = styled.div`

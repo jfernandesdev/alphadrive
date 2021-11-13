@@ -1,36 +1,16 @@
 import React from 'react';
-import { 
-  Box,
-  Text, 
-  Menu,
-  Button,
-  Heading, 
-  MenuButton, 
-  MenuList, 
-  MenuItem,
-  CircularProgress,
-  CircularProgressLabel
- } from '@chakra-ui/react';
+import { Box, Text, Heading, CircularProgress,  CircularProgressLabel } from '@chakra-ui/react';
 
-import { Container, AddNewButton, WrapperCircularProgress, CardGoPremium } from './styles';
-import { HiPlus, FaFolderPlus } from '../../styles/Icons';
+import { Container, WrapperCircularProgress, CardGoPremium } from './styles';
+import {FaFolderPlus } from '../../styles/Icons';
+
+import { ButtonAdd } from '../ButtonAdd';
 
 export const SideRightDashboard: React.FC = () => {
   return (
     <Container>
-      <AddNewButton>
-        <Menu>
-          <MenuButton as={Button} colorScheme="var(--chakra-colors-purple);">
-            <span>Add new <HiPlus /></span>
-          </MenuButton>
-          <MenuList ml={2} mt={-2}>
-            <MenuItem>Upload files</MenuItem>
-            <MenuItem>Upload folder</MenuItem>
-            <MenuItem>New folder</MenuItem>
-          </MenuList>
-        </Menu>
-      </AddNewButton>
-   
+      <ButtonAdd />
+
       <WrapperCircularProgress>
         <CircularProgress min={0} max={100} value={25} color="purple" size="175px" mb={3} capIsRound>
           <CircularProgressLabel><span>25%</span> <br />used </CircularProgressLabel>

@@ -31,7 +31,7 @@ export const TableFiles: React.FC<ListOfFileProps> = ({type, list}) => {
             <Tr key={index}>
               <Td width="40px"> {SlugToIconConverter(item.categorySlug)} </Td>
               <Td> <Heading as="h6" size="xs"> {item.fileName} </Heading> </Td>
-              <Td color="gray"><span>{item.fileType}</span></Td>
+              <Td color="gray" display={{ base: "none", md: "revert" }}><span>{item.fileType}</span></Td>
 
               {(type == null || type === 'deleted') &&
                 <Td isNumeric color="gray"> <span>{item.fileSize} </span> </Td>
