@@ -20,7 +20,7 @@ export const AddNewButton = styled.div`
       height: 80px;
       font-size: 60px;
       border-radius: 50px;
-      position: absolute;
+      position: fixed;
       bottom: 40px;
       z-index: 9999;
       left: 0;
