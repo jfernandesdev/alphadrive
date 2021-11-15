@@ -21,7 +21,7 @@ export const AddNewButton = styled.div`
       font-size: 60px;
       border-radius: 50px;
       position: fixed;
-      top: 82%;
+      top: calc(100% - 125px);
       z-index: 999;
       left: 0;
       right: 0;

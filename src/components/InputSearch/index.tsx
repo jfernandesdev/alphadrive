@@ -25,7 +25,7 @@ const InputSearch: React.FC = () => {
         
           <SortFilter />
 
-          <Box display={{base: 'block',  md:'none'}}>
+          <Box display={{base: 'block',  lg:'none'}}>
             <DrawerRight 
               iconButton={AiOutlineCloudServer} 
               contentBody='dashboard'

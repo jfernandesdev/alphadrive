@@ -62,7 +62,7 @@ export function Dashboard() {
 
       <Box width='300px' padding="0px 30px">
         <ButtonAdd />
-        <Box display={{ base: "none", md: "revert" }}>
+        <Box display={{ base: "none", lg: "revert" }}>
           <CardAvailableStorage />
         </Box>
       </Box>
