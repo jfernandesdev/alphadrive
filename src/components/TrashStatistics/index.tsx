@@ -1,14 +1,14 @@
 import React from 'react';
 import { Text, Box, Flex, Button, Square, Icon } from '@chakra-ui/react';
 
-import { Container, WrapperTrash } from './styles';
+import { WrapperTrash } from './styles';
 import { HiOutlineTrash, VscCircleFilled } from '../../styles/Icons';
 
 import { trashStatistic } from '../../utils/arrayTrashStatistic';
 
-export const SideRightDeleted: React.FC = () => {
+export const TrashStatistics: React.FC = () => {
   return (
-    <Container>
+    <>
       <WrapperTrash>
         <Box textAlign="center">
           <Square size="120px" bg="purple" color="white" borderRadius="10px" mb={5}>
@@ -40,6 +40,6 @@ export const SideRightDeleted: React.FC = () => {
           Empty now
         </Button>
       </WrapperTrash>
-    </Container>
+    </>
   );
 }

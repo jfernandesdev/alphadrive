@@ -1,16 +1,12 @@
 import React from 'react';
 import { Box, Text, Heading, CircularProgress,  CircularProgressLabel } from '@chakra-ui/react';
 
-import { Container, WrapperCircularProgress, CardGoPremium } from './styles';
+import {Container, WrapperCircularProgress, CardGoPremium } from './styles';
 import {FaFolderPlus } from '../../styles/Icons';
 
-import { ButtonAdd } from '../ButtonAdd';
-
-export const SideRightDashboard: React.FC = () => {
+export const CardAvailableStorage: React.FC = () => {
   return (
     <Container>
-      <ButtonAdd />
-
       <WrapperCircularProgress>
         <CircularProgress min={0} max={100} value={25} color="purple" size="175px" mb={3} capIsRound>
           <CircularProgressLabel><span>25%</span> <br />used </CircularProgressLabel>

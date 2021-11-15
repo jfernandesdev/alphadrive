@@ -1,5 +1,5 @@
 import { Box } from "@chakra-ui/react";
-import { SideRightDeleted } from "../components/SideRightDeleted";
+import { TrashStatistics } from "../components/TrashStatistics";
 import { TabOfListOrGrid } from "../components/TabOfListOrGrid";
 
 import { fileList } from '../utils/arrayFileList';
@@ -21,6 +21,9 @@ export const Deleted = () => (
         list={fileList}
       />
     </Box>
-    <SideRightDeleted />
+
+    <Box width='300px' padding="0px 30px">
+      <TrashStatistics />
+    </Box>
   </Container>
 )

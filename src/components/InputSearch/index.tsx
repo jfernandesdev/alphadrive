@@ -1,9 +1,10 @@
 import React from 'react';
-import { Flex, InputGroup, Input, InputLeftElement, IconButton } from '@chakra-ui/react';
+import { Flex, InputGroup, Input, InputLeftElement } from '@chakra-ui/react';
 
 import { Container} from './styles';
 import { SortFilter } from '../SortFilter';
 import { BsSearch, AiOutlineCloudServer } from '../../styles/Icons';
+import { DrawerRight } from '../DrawerRight';
 
 const InputSearch: React.FC = () => {
   return (
@@ -24,14 +25,9 @@ const InputSearch: React.FC = () => {
         
           <SortFilter />
 
-
-          <IconButton
-            variant="outline"
-            color='gray'
-            ml={2}
-            colorScheme="gray"
-            aria-label="Available Storage"
-            icon={<AiOutlineCloudServer size={23}/>}
+          <DrawerRight 
+            iconButton={AiOutlineCloudServer} 
+            contentBody='dashboard'
           />
 
         </InputGroup>

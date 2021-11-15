@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: 300px;
-  padding: 0px 30px;
+  width: 100%;
 `;
 
 export const WrapperCircularProgress = styled.div`

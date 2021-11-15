@@ -1,7 +1,8 @@
 import { Box, SimpleGrid, Heading } from "@chakra-ui/react";
 import { CardCategory } from '../components/CardCategory';
 import { TableFiles } from "../components/TableFiles";
-import { SideRightDashboard } from "../components/SideRightDashboard";
+import { ButtonAdd } from '../components/ButtonAdd';
+import { CardAvailableStorage } from '../components/CardAvailableStorage';
 
 import { categoryList } from '../utils/arrayCategoryList';
 import { fileList } from '../utils/arrayFileList';
@@ -59,7 +60,10 @@ export function Dashboard() {
         <TableFiles list={fileList} />
       </Box>
 
-      <SideRightDashboard />
+      <Box width='300px' padding="0px 30px">
+        <ButtonAdd />
+        <CardAvailableStorage />
+      </Box>
     
     </Container>
   );
