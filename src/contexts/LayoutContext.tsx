@@ -2,7 +2,7 @@ import { createContext, useContext, useState, useEffect, ReactNode } from 'react
 import InputSearch from '../components/InputSearch';
 import { ProfileButton } from '../components/ProfileButton';
 
-import SideBar from '../components/SideBar';
+import { MenuItems } from '../components/MenuItems';
 
 import { Grid, Container } from './styles';
 
@@ -40,7 +40,7 @@ export function LayoutContextProvider({ children} : LayoutContextProviderProps) 
   return (
     <LayoutContext.Provider value={{user, isCollapsed, setIsCollapsed}}>
       <Grid className={isCollapsed ? 'menuIsCollapsed' : ''}>
-        <SideBar />
+        <MenuItems />
         <InputSearch />
         <Container>
             {children}

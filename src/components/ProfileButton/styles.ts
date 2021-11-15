@@ -19,7 +19,7 @@ export const BoxProfile = styled.div`
   @media(max-width: 768px) {
     padding: 0px;
     position: fixed;
-    z-index: 9999;
+    z-index: 999;
     right: 30px;
     top: 25px;
   

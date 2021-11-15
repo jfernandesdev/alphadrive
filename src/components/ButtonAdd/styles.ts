@@ -21,13 +21,13 @@ export const AddNewButton = styled.div`
       font-size: 60px;
       border-radius: 50px;
       position: fixed;
-      bottom: 40px;
-      z-index: 9999;
+      top: 82%;
+      z-index: 999;
       left: 0;
       right: 0;
       margin-left: auto;
       margin-right: auto;
-      border: 10px solid #FFf;
+      border: 10px solid #FFF;
 
       p {
         display: none;

@@ -10,7 +10,7 @@ import LogoImg from '../../assets/logo.svg';
 import { Wrapper, Logo, MenuList, MenuItem } from './styles';
 
 
-const SideBar: React.FC = () => { 
+export const MenuItems: React.FC = () => { 
   const { isCollapsed, setIsCollapsed } = useLayout();
   const location = useLocation();
 
@@ -41,5 +41,3 @@ const SideBar: React.FC = () => {
     </Wrapper>
   );
 }
-
-export default SideBar;
