@@ -29,12 +29,12 @@ export const TableFiles: React.FC<ListOfFileProps> = ({type, list}) => {
         <Tbody>
           {list.map((item,index) => (
             <Tr key={index}>
-              <Td width="40px"> {SlugToIconConverter(item.categorySlug)} </Td>
+              <Td width="30px"> {SlugToIconConverter(item.categorySlug)} </Td>
               <Td> <Heading as="h6" size="xs"> {item.fileName} </Heading> </Td>
               <Td color="gray" display={{ base: "none", md: "revert" }}><span>{item.fileType}</span></Td>
 
               {(type == null || type === 'deleted') &&
-                <Td isNumeric color="gray"> <span>{item.fileSize} </span> </Td>
+                <Td isNumeric color="gray" display={{ base: "none", md: "revert" }}> <span>{item.fileSize} </span> </Td>
               }
               {type === 'shared' &&
                 <Td>

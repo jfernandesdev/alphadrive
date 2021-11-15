@@ -40,7 +40,7 @@ const WrapperCards = styled.div`
 export function Dashboard() {
   return(
     <Container>
-      <Box padding={{ base: "0px 30px 30px 30px", md: "30px" }}>
+      <Box padding={{ base: "0px 0px 30px 30px", md: "30px" }}>
         <Heading as="h5" size="sm">Category</Heading>
         <WrapperCards>
           <SimpleGrid columns={4} spacing={5}>
@@ -62,7 +62,9 @@ export function Dashboard() {
 
       <Box width='300px' padding="0px 30px">
         <ButtonAdd />
-        <CardAvailableStorage />
+        <Box display={{ base: "none", md: "revert" }}>
+          <CardAvailableStorage />
+        </Box>
       </Box>
     
     </Container>

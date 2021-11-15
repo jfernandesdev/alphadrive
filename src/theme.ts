@@ -40,6 +40,7 @@ const theme = extendTheme({
       "html, body": {
         overflow: "hidden",
         fontFamily: "Poppins, system-ui, sans-serif",
+        color: colorMode !== "dark" && "black_accent", 
       },
       ".sidebar": {
         background: colorMode === "dark" && "bg_dark_primary",

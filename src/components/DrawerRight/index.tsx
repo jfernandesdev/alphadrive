@@ -28,32 +28,18 @@ export const DrawerRight: React.FC<drawerRightProps> = ({iconButton, contentBody
         ml={2}
         cursor="pointer"
         colorScheme="gray"
-        aria-label="Available Storage"
+        aria-label={contentBody}
         as={iconButton}
         p={1.5}
         onClick={onOpen}
       />
 
-      <Drawer
-        isOpen={isOpen}
-        placement="right"
-        onClose={onClose}
-      >
+      <Drawer isOpen={isOpen}  placement="right" onClose={onClose}>
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
           <DrawerBody p={8} display="flex" flexDirection="column" justifyContent="center" alignItems="center">
-          {/* <TrashStatistics /> */}
-          {contentDrawer}
-            {/* <CardAvailableStorage /> */}
-          {/* {{
-            switch(contentBody) {
-              case 'dashboard':
-                return 
-              case 'deleted':
-                return 
-              }
-          }} */}
+            {contentDrawer}
           </DrawerBody>
         </DrawerContent>
       </Drawer>

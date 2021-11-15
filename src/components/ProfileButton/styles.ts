@@ -17,8 +17,12 @@ export const BoxProfile = styled.div`
   }
   
   @media(max-width: 768px) {
-    position: absolute;
-    right: 0;
+    padding: 0px;
+    position: fixed;
+    z-index: 9999;
+    right: 30px;
+    top: 25px;
+  
     
     h6, p, svg {
       display: none;

@@ -18,12 +18,14 @@ export const Grid = styled.div`
 
   @media(max-width: 768px) {
     grid-template-columns: 100vw;
-    grid-template-rows: 60px 100px auto;
+    grid-template-rows: 90px 80px auto;
     grid-template-areas:  
-    'LG  PB'
+    'SB PB'
     'SH SH'
     'CT CT'
     ;
+    overflow-y: scroll;
+    padding-bottom: 50px;
   }
 
   &.menuIsCollapsed {

@@ -16,13 +16,28 @@ export const AddNewButton = styled.div`
 
   @media(max-width: 768px) {
     > button {
-      width: 60px;
-      height: 60px;
+      width: 80px;
+      height: 80px;
       font-size: 60px;
       border-radius: 50px;
+      position: absolute;
+      bottom: 40px;
+      z-index: 9999;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      border: 10px solid #FFf;
 
       p {
         display: none;
+      }
+
+      svg {
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
       }
     }
   }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex, InputGroup, Input, InputLeftElement } from '@chakra-ui/react';
+import { Box, Flex, InputGroup, Input, InputLeftElement } from '@chakra-ui/react';
 
 import { Container} from './styles';
 import { SortFilter } from '../SortFilter';
@@ -25,10 +25,12 @@ const InputSearch: React.FC = () => {
         
           <SortFilter />
 
-          <DrawerRight 
-            iconButton={AiOutlineCloudServer} 
-            contentBody='dashboard'
-          />
+          <Box display={{base: 'block',  md:'none'}}>
+            <DrawerRight 
+              iconButton={AiOutlineCloudServer} 
+              contentBody='dashboard'
+            />
+          </Box>
 
         </InputGroup>
       </Flex>
